@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   # Validaciones
-  validates :name, presence: true, length: { maximum: 100 }
+  validates :name, length: { maximum: 100 }
   enum role: [:client, :admin]
 end
