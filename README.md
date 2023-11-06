@@ -12,22 +12,6 @@ Desafio orientado a validar conocimientos de mecanismos de autenticacion y contr
 4. Las noticias deben tener sus tests funcionales.
 5. Hacer deploy a heroku.
 
-## Cuentas de prueba
-Generadas al cargar el seed
-
-#### Cuenta administrador:
-
-- user: 
-- password: 
-
-#### Cuentas usuarios:
-
-- user: 
-- password: 
-
-- user: 
-- password: 
-
 
 ## Subiendo proyecto a Heroku
 

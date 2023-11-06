@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  resources :comments
-  resources :posts
-  devise_for :users
-  get "pages/index"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :posts do
+    resources :comments
+  end
+  devise_for :users, controllers: { registrations: 'users/registrations' }
 
-  # Defines the root path route ("/")
-  root "pages#index"
+  root 'posts#index'
 end

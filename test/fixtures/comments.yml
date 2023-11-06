@@ -1,7 +1,24 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: comments
+#
+#  id         :bigint           not null, primary key
+#  title      :string
+#  content    :text
+#  user_id    :bigint           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 
 one:
-  content: MyText
+  title: MiTitulo
+  content: MiTexto
+  user: one
+  post: one
 
 two:
-  content: MyText
+  title: MiTitulo
+  content: MiTexto
+  user: two
+  post: two
+
